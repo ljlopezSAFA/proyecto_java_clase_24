@@ -25,10 +25,10 @@ public class MainFechas {
 
         //OPERACIONES
         Period periodo = Period.between(fecha, fechaActual);
-        Integer edad = periodo.getYears();
+        int edad = periodo.getYears();
         System.out.println("Mi edad es " + edad);
 
-        Integer minutos = Math.toIntExact(Duration.between(hora, horaActual).getSeconds())/ 60;
+        int minutos = Math.toIntExact(Duration.between(hora, horaActual).getSeconds())/ 60;
         System.out.println("Han pasado " + minutos + " minutos");
 
         LocalDateTime finAbono = fechaHoraActual.plusMonths(3);
